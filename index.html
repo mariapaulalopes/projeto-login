@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-queries.css">
+</head>
+<body>
+    <main>
+        <!--SECTIO 1: LOGIN-->
+        <section id="login">
+            <!--DIV DA IMAGEM-->
+            <div id="container-imagem">
+                <img src="" alt="">
+            </div>
+            <!--FIM DA DIV IMAGEM-->
+
+
+            <!--DIV DO FORMULÁRIO-->
+            <div id="container-forms">
+                <h1>Login</h1>
+                <p>Bem-vindo(a) de volta! Faça login para acessar sua conta e continuar sua experiência.</p>
+
+                <!--FORMS-->
+                <form action="login.php" method="post" autocomplete="on">
+                    <!--DIVS DE CAMPOS-->
+                    <div class="campos">
+                        <span class="material-symbols-outlined">account_circle</span>
+                        <input type="email" name="email" id="idEmail" required placeholder="Seu e-mail" minlength="8" maxlength="30" autocomplete="email">
+                        <label for="idEmail">Login</label>
+                    </div>
+
+                    <div class="campos">
+                        <span class="material-symbols-outlined">key</span>
+                        <input type="password" name="senha" id="idSenha" required minlength="8" maxlength="15" placeholder="Sua senha" autocomplete="current-password">
+                        <label for="idSenha">Senha</label>
+                    </div>
+
+                    <input type="submit" value="Entrar" id="entrar">
+
+                    <a href="#" id="esqueci-senha">
+                        Esqueci a Senha <span class="material-symbols-outlined" id="carta">mail_shield</span>
+                    </a>
+                </form>
+            </div>
+            <!--FIM DA DIV DO FORMULÁRIO-->
+        </section>
+        <!--FIM DA SECTION LOGIN-->
+    </main>
+</body>
+</html>

@@ -1,0 +1,186 @@
+@charset "UTF-8";
+
+:root{
+    --cor1: #7F3AA1;
+    --cor2: #5416B5;
+    --cor3: #0F083B;
+    --cor4: #0C0516;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html, body{
+    width: auto;
+    height: 100vh;
+
+    background-color: var(--cor2);
+}
+
+main{
+    position: relative;
+
+    width: 100vw;
+    height: 100vh;
+}
+
+section#login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 270px;
+    height: 550px;
+
+    background-color: #D9D4D2;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.573);
+
+    /*Tudo fora da borda fica escondido*/
+    overflow: hidden;
+
+    transform: translate(-50%, -50%);
+    transition: width 0.3s, height 0.3s;
+    -moz-transition-timing-function: ease; /*suave*/
+}
+
+/*MOBILE FIRST NÃO USA FLAXBOX*/
+div#container-imagem{
+    display: block;
+    background: #5416B5 url(../imagens/fundologin.png) top center no-repeat;
+    background-size: cover;
+
+    height: 200px;
+}
+
+div#container-forms{
+    display: block;
+    padding: 15px;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+p{
+    font-size: 18px;
+}
+
+div.campos{
+    display: flex;
+    align-items: center; /* Alinha o ícone e o texto no meio verticalmente */
+    height: 45px;
+    margin: 10px 0;
+    
+    border-radius: 8px;
+    background-color: #0F083B;
+}
+
+span{
+    padding: 0 10px; /* Espaço nas laterais do ícone */
+
+    font-size: 1.5rem;
+    color: #D9D4D2;
+}
+
+div.campos > input{
+    flex: 1; /* Faz o input ocupar todo o resto do espaço */
+    height: 100%;
+    padding: 0 10px;
+
+    border: none;
+    border-radius: 0 8px 8px 0; /* Arredonda só o lado direito */
+    background-color: white; 
+    font-size: 1em;
+
+    outline: none; /* Remove a borda ao clicar */
+}
+
+/*
+input{
+    width: 90%;
+    height: 100%;
+    padding: 4px;
+
+    border: none;
+    border-radius: 8px;
+
+    color: #D9D4D2;
+    font-size: 1em;
+    background-color: #7F3AA1;
+
+    vertical-align: middle;
+}*/
+
+
+label{
+    display: none;
+}
+
+input#entrar{
+    display: block;
+
+    width: 100%;
+    height: 35px;
+
+    border: none;
+    border-radius: 5px;
+
+    background-color: #5316b5d4;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.251);
+
+    color: #D9D4D2;
+    font-weight: bold;
+    font-size: 1em;
+
+    cursor: pointer;
+}
+
+input#entrar:hover{
+    background-color: #5416B5;
+}
+
+a#esqueci-senha{
+    display: block;
+
+    padding-top: 2px;
+    margin-top: 7px;
+
+    width: 100%;
+    height: 35px;
+
+    border: 1px solid #5416B5;
+    border-radius: 5px;
+
+    line-height: 25px;
+
+    text-decoration: none;
+    text-align: center;
+    color: #5416B5;
+    font-size: 1em;
+
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.251);
+
+}
+
+a#esqueci-senha:hover{
+    background-color: #5316b550;
+    color: #D9D4D2;
+}
+
+#carta{
+    display: inline-block;
+    vertical-align: middle;
+
+    margin-left: 5px;
+    margin-bottom: 0px;
+
+    font-size: 1.2em;
+    color: #5416B5;
+}

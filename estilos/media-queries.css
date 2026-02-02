@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+:root{
+    --cor1: #7F3AA1;
+    --cor2: #5416B5;
+    --cor3: #0F083B;
+    --cor4: #0C0516;
+}
+
+/*TYPICAL DEVICE BRAKPOINTS ATUAIS
+    MOBILE{até 599px - 600px}
+
+    TABLET{768px - 992px}
+
+    PC/DESKTOP{NOTEBOOKS: 992px - MÉDIO GRANDE: 1200px}
+
+    TV{ acima de 1200px -> TELAS MUITO GRANDES: 1400px - TELAS MAIORES: 1600px}
+*/
+
+@media screen and (min-width: 768px){
+    htm,body{
+        background-image: linear-gradient(
+            to top,
+            var(--cor3),
+            var(--cor2),
+            var(--cor1)
+        );
+        background-attachment: fixed;
+    }
+
+    section#login{
+        display: flex;
+        flex-direction: row;
+
+        width: 700px;
+        height: 350px;
+    }
+
+    div#container-imagem{
+        width: 40%; /*do card PAI*/
+        height: 100%; /*toda altura do card PAI*/
+    }
+
+    input#entrar{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    a#esqueci-senha{
+        width: 100%;
+        height: 40%;
+
+        line-height: 38px; /*mantém o texto centralizado*/
+    }
+}
+
+@media screen and (min-width: 992px){
+    section#login{
+        display: flex;
+        flex-direction: row-reverse;
+
+        width: 950px;
+        height: 400px;
+    }
+
+    div#container-imagem{
+        width: 50%; /*do card PAI*/
+        height: 100%; /*toda altura do card PAI*/
+
+        background-position: top center;
+    }
+
+    input#entrar{
+        width: 100%;
+        margin-bottom: 10px;
+
+        font-size: 1.1em;
+    }
+
+    a#esqueci-senha{
+        width: 100%;
+        height: 45%;
+
+        line-height: 38px; /*mantém o texto centralizado*/
+
+        font-size: 1.1em;
+    }
+}
