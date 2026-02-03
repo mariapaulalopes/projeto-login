@@ -2,6 +2,7 @@
 Projeto desenvolvido com **HTML e CSS**, com foco na construção de um **layout responsivo mobile first**, adaptado para diferentes tamanhos de tela por meio de **media queries**.
 
 ## 🔗 Acesse o site  
+[https://mariapaulalopes.github.io/projeto-login/](https://mariapaulalopes.github.io/projeto-login/)
 
 ## 📌 Sobre o projeto  
 O Projeto Login Responsivo é um projeto de estudo voltado para o **desenvolvimento e adaptação de interfaces**, simulando uma tela de login em diferentes dispositivos.
