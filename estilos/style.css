@@ -95,6 +95,7 @@ div.campos > input{
     flex: 1; /* Faz o input ocupar todo o resto do espaço */
 
     min-width: 0; /* IMPEDE que o input estique a div pai no mobile */
+    width: 100%;
     height: 100%;
     padding: 0 10px;
 
